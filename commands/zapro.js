@@ -8,6 +8,7 @@ module.exports.run = async (bot, message, args) => {
     .addField("Zaproszenie: ", invite)
         
     message.channel.send(zapro);
+    message.delete().catch(O_o=>{});
 }
  
 module.exports.help = {
