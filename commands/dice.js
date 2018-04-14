@@ -4,7 +4,7 @@ module.exports.run = async (bot, message, args) => {
 
     let arrayDice = new Array();
 
-    if(args < 1) return message.channel.send("Błędne argumenty!").then(msg => msg.delete(3000));
+    if(args < 0) return message.channel.send("Błędne argumenty!").then(msg => msg.delete(3000));
 
     if(!args[0]){
         let dice = Math.floor((Math.random() * 6) + 1);
