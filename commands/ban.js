@@ -5,7 +5,7 @@ module.exports.run = async (bot, message, args) => {
     let bUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
     if(!bUser) return message.channel.send("Nie mogę znaleźć użytkownika!");
     let bReason = args.join(" ").slice(22);
-    if(!message.member.hasPermission("MANAGE_MEMBERS")) return message.channel.send("Gówno zrobisz z takimi uprawnieniami!");
+    if(!message.member.hasPermission("MANAGE_MEMBERS")) return message.channel.send("Nic nie zrobisz z takimi uprawnieniami!");
     if(bUser.hasPermission("MANAGE_MESSAGES")) return message.channel.send("Nie możesz go zbanować!");
   
     let banEmbed = new Discord.RichEmbed()
