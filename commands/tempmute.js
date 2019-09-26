@@ -36,7 +36,7 @@ module.exports.run = async (bot, message, args) => {
 
   setTimeout(function(){
     tomute.removeRole(muterole.id);
-    message.channel.send(`<@${tomute.id}> może otworzyć mordę!`);
+    message.channel.send(`<@${tomute.id}> może mówić!`);
   }, ms(mutetime));
 
 }
